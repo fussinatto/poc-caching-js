@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="demo.js#param=head1#dajshdas=dsfsdf"></script>
+  <script src="demo.js#param=head2&other=stuff"></script>
+</head>
+<body>
+
+  <h4>Check the console amigo</h4>
+  
+  <script src="demo.js#pjid=333331&place=place&size=300x250&tm="></script>
+  <script src="demo.js#asdasd"></script>
+  <script src="demo.js"></script>
+
+  
+  <script>
+  // Append Child
+    var dynScr = document.createElement('script');
+    dynScr.src = "demo.js#param=append"
+
+    document.body.appendChild(dynScr);
+  </script>
+
+  <script>
+  // Remove / Append Child
+    var firstScr = document.getElementsByTagName('script')[0];
+    firstScr.parentNode.removeChild(firstScr);
+    document.body.appendChild(firstScr);
+  </script>
+  
+  <script>
+  // Document.write
+    document.write('<scr'+'ipt src="demo.js#param=doc.write&numntr=123&project_id=kjfhaksdf"></scr'+'ipt>');
+  </script>
+</body>
+</html>
